@@ -14,7 +14,9 @@ app.use(bodyParser.json());
 app.set('view engine', 'ejs') //This is to link the html page to the sender
 app.set('views', './views') //Make sure to create a views folder with the .ejs files in it
 app.use(express.static(__dirname + '/public')); // References the CSS to the ejs files
-var port = process.env.PORT || 3000;
+
+// when uploading to heroku (remove when it isn't)
+ var port = process.env.PORT || 3000;
 
 //Homepage
 app.get('/', function(req, res){      //Once node index.js is running. http://localhost:3000/ should return the page. hence the '/' which referres to just localhost:300 page
@@ -97,7 +99,13 @@ app.get('/about/:id', function(req,res){  //Creates a page for http://localhost:
 
 
 
+//FOR LOCAL
+// app.listen(3000, function(){  //When you upload to heroku, set app.listen(port,function...  )
+//   console.log("Listening on port 3000")
+// })
 
+
+// FOR HEROKU
 app.listen(port, function(){  //When you upload to heroku, set app.listen(port,function...  )
   console.log("Listening on port 3000")
 })
