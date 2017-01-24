@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+
+
+
+  <body id = "aboutFrame">
+
+    <ul id = "topTabs">
+      <li><a href="\">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="projects">Projects</a></li>
+    </ul>
+
+
+    <h1>Welcome to my blogs.</h1>
+
+    <form action="/about" method="post">
+      <input type="text" name="title" placeholder="Please enter the title">
+      <textarea name="body" cols="100" rows="10" placeholder="Please enter the message"></textarea>
+      <input type="submit" value="Submit!">
+    </form>
+
+  <div>
+    <ul>
+    <% for (var i = 0; i<data.length; i++) {%>
+      <li class = "centerText">  <a href=<%="/about/"+data[i].id%>>  <%= data[i].title %>  </a>  </li>        <% }
+    %>
+    </ul>
+  </div>
+
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+
+
+  <body id = "QCframe">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="#">Projects</a></li>
+    </ul>
+
+  <ul>
+    <% for (var i = 0; i<data.length; i++) {%>
+      <li  class = "centerText"><a href=<%="/projects/"+data[i].id%>><%= data[i].title %></a></li>        <% }
+    %>
+    </ul>
+
+
+
+  </body>
+
+    <!-- <ul>
+    <% for (var i = 0; i<data.length; i++) {%>
+      <li><a href=<%="/project/"+data[i].id%>><%= data[i].title %></a></li>        <% }
+    %>
+    </ul> -->
+
+
+
+
+  <!-- <p class = "projectTitle">    Android-Easy-Tip-Calculator   </p>
+  <p class = "projectDetails">The Easy Tip Calculator application launched a graphical user interface which recieves inputs from the user such as tip %, tax %, size of party, and total amount spent. It then evaluates the amount each person has to pay. There is an emailing option that allows the user to send an email the cost to themselves or others. </p>
+  <div id = "CenterImage"><img src="TipCalculator.png" ></div>
+
+
+  <p class = "projectTitle">    Java Lexical Analyzer   </p>
+  <p class = "projectDetails">The lexical analyzer program reads in an input text file, extracts tokens in the text file, and write them out one by one on separate lines. Each token is flagged with its category. The output is sent to an output text file. Whenever invalid tokens are found, error messages are printed, and the reading process continues.</p> -->
+    <!-- <h1><%= data.title %></h1> -->
+
+
+</html>

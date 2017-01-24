@@ -1,0 +1,120 @@
+#NYCframe{
+  font-family:fantasy;
+  font-size:20px;
+    background-image:url(NYC.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+}
+
+#aboutFrame{
+  font-family:fantasy;
+    background-image:url(aboutPic.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+
+}
+
+.centerText{
+  width: 70%;
+  margin: auto;
+}
+
+
+.projectTitle{
+  color:orange;
+  font-family:fantasy;
+  width:500px;
+  margin: 100px auto;
+  text-align:center;
+  font-size:35px;
+  clear:right;
+}
+#QCframe{
+
+  font-family:fantasy;
+    background-image:url(QC.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+}
+
+  #MainMenuPrompt{
+  color:white;
+  font-family:fantasy;
+  width:500px;
+  margin: 100px auto;
+  text-align:center;
+  font-size:25px;
+  }
+
+  .projectDetails{
+    color:orange;
+    font-family:fantasy;
+    width:500px;
+    margin: 100px auto;
+    text-align:center;
+    font-size:15px;
+    clear:right;
+
+  }
+
+#CenterImage{
+  text-align:center;
+  clear:right;
+  background-image:url(TipCalculator.png);
+
+}
+
+#blogPost{
+
+}
+#posts{
+  text-align:center;
+  clear:right;
+}
+
+li{
+  display:inline;
+}
+
+#projectsLayout{
+  color:black;
+  font-size:50px;
+  display:inline-block;
+}
+
+#topTabs{
+  font-size:20px;
+  font-weight:bold;
+  text-decoration: none;
+  display:inline-block;
+  padding: 0 25px;
+  color:white;
+}
+
+}
+
+#LeftTitle{
+  font-size: 20px;
+}
+
+ul{
+
+  float:right;
+    text-decoration:none;
+}
+li , ul , a{
+  font-size:20px;
+  font-weight:bold;
+  text-decoration: none;
+  display:inline-block;
+  padding: 0 25px;
+  color:white;
+}
+
+@media all and (max-width: 960px){  /* This allows for the mobile and window dynamic size changer (called a media query)*/
+  body{
+    background-color: yellow;
+  }
